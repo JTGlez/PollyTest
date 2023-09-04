@@ -12,10 +12,6 @@ AUDIO_FORMATS = {"ogg_vorbis": "audio/ogg",
                  "mp3": "audio/mpeg",
                  "pcm": "audio/wave; codecs=1"}
 
-# Asegúrate de cambiar la ruta a donde se encuentren tus archivos
-os.environ['AWS_SHARED_CREDENTIALS_FILE'] = '.aws/credentials'
-os.environ['AWS_CONFIG_FILE'] = '.aws/config'
-
 # Create a client using the credentials and region defined in the adminuser
 # section of the AWS credentials and configuration files
 session = Session(profile_name="adminuser")
